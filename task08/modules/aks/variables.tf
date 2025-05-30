@@ -1,42 +1,53 @@
 variable "aks_cluster_name" {
-  type = string
+  type        = string
+  description = "sku"
 }
 variable "rg_name" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "location" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "dns_prefix" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "system_node_pool_name" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "system_node_pool_node_count" {
-  type = number
+  type        = number
+  description = "sku"
 }
 
 variable "system_node_pool_vm_size" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "acr_id" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "key_vault_id" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "tenant_id" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
-variable "ua_identity_name" {
-  type = string
+variable "tags" {
+  type        = map(string)
+  description = "sku"
 }

@@ -1,50 +1,67 @@
 variable "container_group_name" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "rg_name" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "location" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "os_type" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "container_name" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "container_image" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "container_cpu" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "container_memory" {
-  type = string
+  type        = string
+  description = "sku"
 }
 
 variable "container_environment_variables" {
-  type = map(string)
+  type        = map(string)
+  description = "sku"
 }
 
 variable "container_secure_environment_variables" {
-  type      = map(string)
-  sensitive = true
+  type        = map(string)
+  sensitive   = true
+  description = "sku"
 }
 
 variable "acr_login_server" {
-  type = string
+  type        = string
+  description = "sku"
 }
 variable "acr_admin_password" {
-  type = string
+  type        = string
+  description = "sku"
 }
 variable "acr_admin_username" {
-  type = string
+  description = "sku"
+  type        = string
+}
+variable "tags" {
+  description = "sku"
+  type        = map(string)
 }

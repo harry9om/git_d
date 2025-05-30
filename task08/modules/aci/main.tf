@@ -28,4 +28,6 @@ resource "azurerm_container_group" "container_group" {
     environment_variables        = var.container_environment_variables
     secure_environment_variables = var.container_secure_environment_variables
   }
+
+  tags = var.tags
 }

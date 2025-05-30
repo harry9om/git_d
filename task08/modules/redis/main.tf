@@ -5,6 +5,8 @@ resource "azurerm_redis_cache" "redis_cache" {
   sku_name            = var.sku_name
   capacity            = var.capacity
   family              = var.family
+
+  tags = var.tags
 }
 
 resource "azurerm_key_vault_secret" "key_vault_secret_hostname" {

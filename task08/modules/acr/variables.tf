@@ -30,12 +30,19 @@ variable "context_access_token" {
 }
 
 variable "platform_os" {
-  type = string
+  description = "sku"
+  type        = string
 }
 
 variable "acr_task_name" {
-  type = string
+  description = "sku"
+  type        = string
 }
 variable "docker_image_name" {
-  type = string
+  type        = string
+  description = "sku"
+}
+variable "tags" {
+  type        = map(string)
+  description = "sku"
 }
